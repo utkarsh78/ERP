@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light" style="background-color: rgb(0, 255, 179) !important;">
+<div class="container">
+    <div class="py-5 text-center">
+        <img alt="" class="d-block mx-auto mb-4" height="140" src="assets/svg/hr.jpeg" width="140">
+        <h2>Academic ERP</h2>
+        <p class="lead">For Deleting HR Details, Please Enter its HR ID</p>
+    </div>
+
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Delete HR Details</h4>
+        <form class="needs-validation-students" id="student-validation" novalidate>
+
+            <div class="mb-3">
+                <label for="hr_id">HR ID</label>
+                <input class="form-control" id="hr_id">
+                <div class="invalid-feedback">
+                    Please Enter a valid HR ID to delete
+                </div>
+            </div>
+
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Delete</button>
+            <div class="alert alert-warning" role="alert" id="login-alert" style="display: none; margin-top: 20px">
+                Error While Deleting!!
+            </div>
+            <div class="alert alert-success" role="alert" id="login-success" style="display: none; margin-top: 20px">
+                Deleted Successfully!!
+            </div>
+        </form>
+    </div>
+    <br/>
+    <hr class="mb-4">
+
+
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+</footer>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/form-deletehr.js"></script>
+</html>

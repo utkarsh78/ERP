@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select</title>
+
+  <style>
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+        
+    
+    #parent {
+      /* display: flex; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      top:40%;
+      left: 50%;
+      transform: translate3d(-50%,-50%, 0);
+      position: absolute;
+    }
+    .check{
+      margin-top: 10%;
+    }
+    
+    
+    #top-right{
+         line-height: 12px;
+         width: 18px;
+         font-size: 8pt;
+         font-family: tahoma;
+         margin-top: 20px;
+         margin-right: 100px;
+         position:absolute;
+         top:0;
+         right:0;
+     }
+    
+    
+  </style>
+</head>
+<body>
+<div id="parent">
+
+  <div class="py-5 text-center">
+    <img alt="" class="d-block mx-auto mb-4" height="140" src="assets/svg/IIIT.png" width="140">
+    <h2>Academic ERP</h2>
+    <p class="lead">Select Category</p>
+  </div>
+
+  <div class="organisation">
+    <h3> ORGANISATION </h3>
+  <button onclick="location.href='dashboard.html'" type="button">Add</button>
+  <button onclick="location.href='view.html'" type="button">View</button>
+  <button onclick="location.href='update.html'" type="button">Update</button>
+  <button onclick="location.href='delete.html'" type="button">Delete</button>
+
+  </div>
+
+  <div class="organisation_HR">
+    <h3> HR DETAILS </h3>
+  <button onclick="location.href='dashboardhr.html'" type="button">Add</button>
+  <button onclick="location.href='viewhr.html'" type="button">View</button>
+  <button onclick="location.href='updatehr.html'" type="button">Update</button>
+  <button onclick="location.href='deletehr.html'" type="button">Delete</button>
+
+  </div>
+  
+</div>
+
+<div id="top-right">
+  <button onclick="location.href='index.html'" type="button">Logout</button>
+</div>
+
+<body>
+
+</body>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/buttons.js"></script>
+</html>

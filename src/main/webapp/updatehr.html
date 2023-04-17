@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light" style="background-color: rgb(0, 255, 179) !important;">
+<div class="container">
+    <div class="py-5 text-center">
+        <img alt="" class="d-block mx-auto mb-4" height="140" src="assets/svg/hr.jpeg" width="140">
+        <h2>Academic ERP</h2>
+        <p class="lead">Updating HR Details, You can Update the Details of HR Except their HR ID</p>
+    </div>
+
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">HR Details</h4>
+        <form class="needs-validation-students" id="student-validation" novalidate>
+
+
+                    <div class="mb-3">
+                        <label for="hr_id">HR ID</label>
+                        <input class="form-control" id="hr_id" placeholder="" required type="text" value="">
+                        <div class="invalid-feedback">
+                            <!-- Please enter a valid email address for updates. -->
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="first_name">First Name</label>
+                            <input class="form-control" id="first_name" placeholder="" required type="text" value="">
+                            <div class="invalid-feedback">
+                                <!-- Valid first name is required. -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="last_name">Last Name</label>
+                            <input class="form-control" id="last_name" placeholder="" required type="text" value="">
+                            <div class="invalid-feedback">
+                                <!-- Valid last name is required. -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cont_no">Conatct Number</label>
+                            <input class="form-control" id="cont_no" placeholder="" required type="text" value="">
+                            <div class="invalid-feedback">
+                                <!-- Valid first name is required. -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="org_id">Organisation ID</label>
+                            <input class="form-control" id="org_id" placeholder="" required type="text" value="">
+                            <div class="invalid-feedback">
+                                <!-- Valid last name is required. -->
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="mb-3">
+                        <label for="email"> Email ID</label>
+                        <input class="form-control" id="email" placeholder="email" required type="text" value="">
+                        <div class="invalid-feedback">
+                            <!-- Please enter a valid email address for updates. -->
+                        </div>
+                    </div> 
+
+
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Update Details</button>
+            <div class="alert alert-warning" role="alert" id="login-alert" style="display: none; margin-top: 20px">
+                Error!!
+            </div>
+            <div class="alert alert-success" role="alert" id="login-success" style="display: none; margin-top: 20px">
+                Details saved successfully!!
+            </div>
+        </form>
+    </div>
+    <br/>
+    <hr class="mb-4">
+
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+</footer>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/form-updatehr.js"></script>
+</html>

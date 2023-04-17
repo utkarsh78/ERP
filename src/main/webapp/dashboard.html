@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organisation</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+
+
+</head>
+<body class="bg-light" style="background-color: lightskyblue !important;">
+<div class="container">
+    <div class="py-5 text-center">
+        <img alt="" class="d-block mx-auto mb-4" height="140" src="assets/svg/org.jpeg" width="140">
+        <h2>Academic ERP</h2>
+        <p class="lead">Registration Page for ORGANISATION, Please Fill the Below Entries</p>
+    </div>
+
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Organisation Details</h4>
+        <form class="needs-validation-students" id="student-validation" novalidate>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="org_name">Organisation Name</label>
+                    <input class="form-control" id="org_name" placeholder="Name" required type="text" value="">
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="org_id">Organisation ID</label>
+                    <input class="form-control" id="org_id" placeholder="ID" required type="text" value="">
+                    <div class="invalid-feedback">
+                        Valid ID is required
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="org_address"> Organisation Address</label>
+                <input class="form-control" id="org_address" placeholder="Address" required type="text">
+                <div class="invalid-feedback">
+                    Please enter Valid Address
+                </div>
+            </div>
+
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to register</button>
+            <div class="alert alert-warning" role="alert" id="login-alert" style="display: none; margin-top: 20px">
+                Organisation Already Exists!!
+            </div>
+            <div class="alert alert-success" role="alert" id="login-success" style="display: none; margin-top: 20px">
+                Details Saved Successfully!!
+            </div>
+        </form>
+    </div>
+    <br/>
+    <hr class="mb-4">
+
+
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+</footer>
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/form-validation.js"></script>
+</html>
